@@ -29,16 +29,16 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(Vector3.forward * CurrentRotation);
+            transform.Rotate(Vector3.left * CurrentRotation);
         }
 
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             //negatieve vector om van richting te veranderen
-            transform.Rotate(-Vector3.forward * CurrentRotation);
+            transform.Rotate(-Vector3.left * CurrentRotation);
         }
 
-        rb.freezeRotation = false;
+        //rb.freezeRotation = false;
 
     }
 
